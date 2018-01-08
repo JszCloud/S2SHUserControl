@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="S2SHUserControl:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="S2SHUserControl.war">
+      <element id="artifact" artifact-name="S2SHUserControl:war exploded" />
+    </root>
+  </artifact>
+</component>

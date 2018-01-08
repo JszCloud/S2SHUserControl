@@ -1,0 +1,85 @@
+body{
+margin: 0;
+height: 100%;
+}
+header{
+width: 100%;
+height: 40px;
+background-color: #4C99C1;
+font-size: 20px;
+color: #fff
+}
+header img{
+	width: 40px;
+	height: 40px;
+	
+
+}
+
+header .nav1{
+	float: right;
+	margin-right: 10%;
+	margin-top: 10px;
+
+}
+.nav1 a{
+	color: #fff
+}
+section{
+width: 100%;
+height: 100%;
+}
+
+aside{
+width: 15%;
+height: 580px;
+float: left;
+background-color: #EFEFEF
+}
+aside ul{
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 20px
+}
+aside ul li{
+	text-align: center;
+	margin-top: 10px;
+margin-bottom: 5px;
+	border-bottom: 1px solid #E7E7E7;
+}
+article{
+height: 580px;
+width: 85%;
+float: right;
+
+}
+article .div1{
+	text-align: center;
+	margin:0 auto;
+	width: 70%;
+	height: 55%
+}
+.btn1{
+	margin-left: 7%;
+	margin-right: 7%
+}
+.btn2{
+	margin-right: 7%
+}
+article .div2{
+	margin-top: 2%;
+	margin-left: 2%;
+	width: 50%;
+	height: 55%
+}
+table{
+	margin-top: 10px;
+	text-align: center;
+}
+table,td,th{
+	border: 1px solid #EBEBEB;
+}
+table td,th{
+	width: 10%;
+	height: 40px;
+}
