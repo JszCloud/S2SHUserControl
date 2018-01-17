@@ -1,5 +1,6 @@
 package cn.name.control.action;
 
+import cn.name.control.entity.Chart;
 import cn.name.control.entity.Page;
 import cn.name.control.entity.User;
 import cn.name.control.service.UserService;
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -20,9 +22,18 @@ public class UserAction {
     @Autowired
     UserService userService;
     private User user;
+    private Chart chart=new Chart();
     private Page page = new Page();
     private List<User> list=new ArrayList<>();
     private String message;
+
+    public Chart getChart() {
+        return chart;
+    }
+
+    public void setChart(Chart chart) {
+        this.chart = chart;
+    }
 
     public Page getPage() {
         return page;
@@ -126,5 +137,14 @@ public class UserAction {
     public String del(){
         userService.remove(user);
         return "list";
+    }
+
+    /**
+     *
+     * @return
+     */
+    public String to_pie(){
+        userService.selectC(chart);
+        return "pie";
     }
 }

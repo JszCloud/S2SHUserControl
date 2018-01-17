@@ -1,6 +1,7 @@
 package cn.name.control.service.impl;
 
 import cn.name.control.dao.UserDao;
+import cn.name.control.entity.Chart;
 import cn.name.control.entity.Page;
 import cn.name.control.entity.User;
 import cn.name.control.service.UserService;
@@ -19,6 +20,12 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
     @Autowired
     UserDao userDao;
+
+
+    @Override
+    public Chart selectC(Chart chart) {
+        return userDao.findChart(chart);
+    }
 
     /**
      * 查询所有

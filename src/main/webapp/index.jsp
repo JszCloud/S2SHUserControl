@@ -25,6 +25,7 @@
         <ul class="ul">
             <li>用户查询</li>
             <li>用户新增</li>
+            <li>数据分析</li>
         </ul>
     </aside>
     <article>

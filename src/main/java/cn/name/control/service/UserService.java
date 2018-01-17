@@ -1,5 +1,6 @@
 package cn.name.control.service;
 
+import cn.name.control.entity.Chart;
 import cn.name.control.entity.Page;
 import cn.name.control.entity.User;
 
@@ -41,4 +42,6 @@ public interface UserService {
      * @param user
      */
     void remove(User user);
+
+    Chart selectC(Chart chart);
 }

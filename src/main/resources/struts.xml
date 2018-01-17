@@ -10,7 +10,7 @@
     <package name="default" namespace="/" extends="struts-default">
         <action name="userAction!*" class="userAction" method="{1}">
             <result name="info">/WEB-INF/views/user/info.jsp</result>
-
+            <result name="pie">/WEB-INF/views/user/pie.jsp</result>
             <result name="list">/WEB-INF/views/user/list.jsp</result>
             <result name="save">/WEB-INF/views/user/form.jsp</result>
             <result name="edit">/WEB-INF/views/user/edit.jsp</result>

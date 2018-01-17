@@ -1,5 +1,6 @@
 package cn.name.control.dao;
 
+import cn.name.control.entity.Chart;
 import cn.name.control.entity.Page;
 import cn.name.control.entity.User;
 
@@ -47,4 +48,6 @@ public interface UserDao {
      * @return
      */
     Integer page(User user);
+
+    Chart findChart(Chart chart);
 }

@@ -8,6 +8,10 @@ $(function() {
     $ul.find("li:eq(1)").on("click",function(){
         $(".iframe").prop("src","userAction!to_save")
     })
+    var $ul=$(".ul")
+    $ul.find("li:eq(2)").on("click",function(){
+        $(".iframe").prop("src","userAction!to_pie")
+    })
 
     //全选
     $("#over").bind("click",

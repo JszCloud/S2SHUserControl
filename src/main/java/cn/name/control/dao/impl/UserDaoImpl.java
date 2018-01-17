@@ -1,6 +1,7 @@
 package cn.name.control.dao.impl;
 
 import cn.name.control.dao.UserDao;
+import cn.name.control.entity.Chart;
 import cn.name.control.entity.ChartData;
 import cn.name.control.entity.Page;
 import cn.name.control.entity.User;
@@ -106,5 +107,15 @@ public class UserDaoImpl implements UserDao {
          Integer p=chartData.getHibernateTemplate().find("from User").size();
         //System.out.println(p);
         return p;
+    }
+
+    @Override
+    public Chart findChart(Chart chart) {
+        Integer man=chartData.getHibernateTemplate().find("from User us where us.sex=?","男").size();
+        Integer woman =chartData.getHibernateTemplate().find("from User us where us.sex=?","女").size();
+        System.out.println(man+"+++00"+woman);
+        chart.setMan(man);
+        chart.setWoman(woman);
+        return chart;
     }
 }
